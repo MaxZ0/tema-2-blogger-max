@@ -219,12 +219,15 @@ a.tag-school.blue-line {
   padding: 16px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
-  color: #0a4144;
+  color: #fffcdc;
+  text-shadow: 1px 1px 2px #77465a;
 }
 
 .home-action-btn {
+  font-size: 26px;
   text-align: center;
-  background-color: #0a4144;
+  border-style: solid;
+  border-color: #fa94bf;
   text-decoration: none;
   color: #fa94bf;
   padding: 16px;
@@ -232,10 +235,11 @@ a.tag-school.blue-line {
   font-family: "Roboto", sans-serif;
   border-radius: 8px;
   width: 200px;
+  text-shadow: 1px 1px 2px #77465a;
 }
 
 .home-action-btn:hover {
-  color: #0a4144;
+  color: #fffcdc;
   background-color: #fa94bf;
   transition: 1s ease;
 }
@@ -248,6 +252,8 @@ a.tag-school.blue-line {
   width: 100%;
   color: white;
   text-align: center;
+  display: flex;
+  margin: 0 auto;
 }
 
 .f-icon-space {
@@ -262,6 +268,7 @@ a.tag-school.blue-line {
   color: rgb(252, 252, 252);
   font-family: "Roboto", sans-serif;
   font-size: 12px;
+  margin: 16px;
 }
 
 a.a-footer {
@@ -274,9 +281,25 @@ a.a-footer:hover {
   transition: 0.5s ease;
 }
 
+.responsive-footer {
+  margin: 0 auto;
+  width: 350px;
+}
+
 @media only screen and (max-width: 600px) {
   body {
     background-color: #fffcdc;
     color: red;
+  }
+
+  .text-footer {
+    color: rgb(252, 252, 252);
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    margin: 0px;
+  }
+
+  .footer {
+    display: block;
   }
 }
