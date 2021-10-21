@@ -9,15 +9,15 @@
     <link rel="stylesheet" href="./style/style.css" />
   </head>
   <body id="home">
-    <nav role="navigation">
+    <nav role="navigation" id="navbar">
       <div id="menuToggle">
-        <input type="checkbox" />
+        <input type="checkbox"/>
         <span></span>
         <span></span>
         <span></span>
         <ul id="menu">
-          <a href="#"><li>Home</li></a>
-          <a href="#"><li>Blog</li></a>
+          <a href="./index.html"><li>Home</li></a>
+          <a href="./blog.html"><li>Blog</li></a>
           <a href="#"><li>Illustratsjons</li></a>
           <a href="#"><li>Contact</li></a>
           <p class="tag-text">Tag Search:</p>
@@ -59,47 +59,95 @@
         </ul>
       </div>
     </nav>
-    <a href="#home"><h2 class="logo-name">BakaSloth</h2></a>
+    <div class="nav-top">
+      <span></span>
+      <a href="./index.html"><h2 class="logo-name">BakaSloth</h2></a>
+      <a  href="#"><img class="search-icon icon-space-search" src="./img/icon-tema2/magnifying-glass.png"/></a>
+    </div>
+    <nav class="web-menu">
+      <a href="./index.html"  class="active menu-on-hover">Home</a>
+      <a href="./blog.html" class="menu-on-hover">Blog</a>
+      <a href="#" class="menu-on-hover">Illustratsjons</a>
+      <a href="#" class="menu-on-hover">Contact</a>
+    </nav>
     <div class="main-container">
       <div class="box-around">
         <h2 class="banner-title">Illustratsjon Blog</h2>
       </div>
-      <img class="banner-img" src="./img/banner-girls.png" alt="3 girls chilling, looking around. Text BakaSloth">
+      <div class="img-container">
+        <img class="banner-img" src="./img/banner-girls.png" alt="3 girls chilling, looking around. Text BakaSloth">
+        <div class="text-img-container">
+          <h1 class="centered-main-text">Illustration Blog</h1>
+          <a href="blog.html" class="centered home-action-btn-2"><div class="">Read More</div></a>
+        </div>
+      </div>
       <a href="blog.html"><div class="home-action-btn">Read More</div></a>
-    </div>
-  </body>
-  <footer class="footer">
-    <div class="social-footer">
-      <a href="#"
-      ><img
-        class="f-icon-space"
-        src="./img/icon-tema2/discord.png"
-      /></a>
-      <a href="#"
-      ><img
-        class="f-icon-space"
-        src="./img/icon-tema2/instagram.png"
-      /></a>
-      <a  href="#"
-      ><img class="f-icon-space" src="./img/icon-tema2/pinterest.png"
-      /></a>
-      <a href="#"
-      ><img class="f-icon-space" src="./img/icon-tema2/twitch.png"
-      /></a>
-      <a href="#"
-      ><img class="f-icon-space" src="./img/icon-tema2/youtube.png"
-      /></a>
-      <a href="#"
-      ><img class="f-icon-space" src="./img/icon-tema2/tik-tok.png"
-      /></a>
-    </div>
-    <div class="text-footer">
-      <div class="responsive-footer">
-        <a href="#" class="a-footer">About</a>
-        <a href="#" class="a-footer">Terms & Conditions</a>
-        <a href="#" class="a-footer">Contact</a>
-        <p href="#" class="a-footer">©BakaSloth</p>
+      <div class="secound-main-container">
+        <h2 class="sec-main-title">Featured Illustratsjons:</h2>
+        <div class="card-container">
+          <div class="card">
+            <a href="#" class="dark-co img-hover">
+            <img class="card-img" src="./img/under-400kb/Untitled_Artwork 5.png" alt="demon clown girl">
+            <h2 class="roboto card-name">Demon Clown</h2>
+          </a>
+            <h3 class="roboto date">19.09.21</h3>
+            <p class="roboto">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum rem provident nisi aperiam inventore. Modi eligendi quaerat quae! Esse in vero iure eius natus atque sed consequuntur consequatur quia aliquam.</p>
+          </div>
+          <div class="card">
+            <a href="#" class="dark-co img-hover">
+            <img class="card-img" src="./img/under-400kb/Untitled_Artwork 8.png" alt="girl crying smoking holding a cute kitten">
+            <h2 class="roboto card-name">Cat Lover</h2>
+          </a>
+            <h3 class="roboto date">19.09.21</h3>
+            <p class="roboto">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum rem provident nisi aperiam inventore. Modi eligendi quaerat quae! Esse in vero iure eius natus atque sed consequuntur consequatur quia aliquam.</p>
+          </div>
+          <div class="card last">
+            <a href="#" class="dark-co img-hover">
+            <img class="card-img" src="./img/under-400kb/Untitled_Artwork 9.png" alt="Butterfly fary girl">
+            <h2 class="roboto card-name">Fairy Touch</h2>
+          </a>
+            <h3 class="roboto date">19.09.21</h3>
+            <p class="roboto last">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum rem provident nisi aperiam inventore. Modi eligendi quaerat quae! Esse in vero iure eius natus atque sed consequuntur consequatur quia aliquam.</p>
+          </div>
+
+        </div>
       </div>
     </div>
-  </footer>
+    <footer class="footer">
+      <div class="responsive-footer">
+      <div class="social-footer">
+        <a href="#"
+        ><img
+          class="f-icon-space"
+          src="./img/icon-tema2/discord.png"
+        /></a>
+        <a href="#"
+        ><img
+          class="f-icon-space"
+          src="./img/icon-tema2/instagram.png"
+        /></a>
+        <a  href="#"
+        ><img class="f-icon-space" src="./img/icon-tema2/pinterest.png"
+        /></a>
+        <a href="#"
+        ><img class="f-icon-space" src="./img/icon-tema2/twitch.png"
+        /></a>
+        <a href="#"
+        ><img class="f-icon-space" src="./img/icon-tema2/youtube.png"
+        /></a>
+        <a href="#"
+        ><img class="f-icon-space" src="./img/icon-tema2/tik-tok.png"
+        /></a>
+      </div>
+      <div class="text-footer">   
+          <a href="#" class="a-footer">About</a>
+          <a href="#" class="a-footer">Terms & Conditions</a>
+          <a href="#" class="a-footer">Contact</a>
+          <p class="a-footer">©BakaSloth</p>
+      </div>
+    </div>
+    </footer>
+    <script src="./js/script.js"></script>
+  </body>
+  
 </html>
